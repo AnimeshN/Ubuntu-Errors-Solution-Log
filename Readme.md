@@ -1,4 +1,4 @@
-# Error1
+## Error1:Hash sum mismatch
 ```
 Reading package lists... Done
 E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/dists/bionic-updates/main/binary-amd64/by-hash/SHA256/7d488f5060b8200c13e3b730fda57962d56ac4f15d4034b491bbdc5568ac602d  Hash Sum mismatch
@@ -18,7 +18,7 @@ E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/dists/bionic-updates/main
 E: Some index files failed to download. They have been ignored, or old ones used instead.
 ```
 
-# Solution1
+## Solution1
 ```
 sudo rm -rf /var/lib/apt/lists/*
 sudo apt-get update -o Acquire::CompressionTypes::Order::=gz
