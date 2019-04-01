@@ -26,7 +26,7 @@ https://www.youtube.com/watch?v=Vd2aLTZDLQg
 
 ##### Edit the new Virtual host file, we will be adding and changing the following in bold:
 `sudo nano /etc/apache2/sites-available/btnhd.com.conf`
-
+```
 <VirtualHost *:80>
 ServerAdmin info@btnhd.com
 ServerName btnhd.com
@@ -35,7 +35,7 @@ DocumentRoot /var/www/btnhd.com/public_html
 ErrorLog ${APACHE_LOG_DIR}/error.log
 CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
-
+```
 ##### We will need to enable the new virtual host file with the following command:
 `sudo a2ensite btnhd.com.conf`
 
